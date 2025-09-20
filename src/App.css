@@ -1,0 +1,285 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Custom styles */
+.card {
+  border: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.btn {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.btn-primary {
+  background-color: #4a90e2;
+  border-color: #4a90e2;
+}
+
+.btn-primary:hover {
+  background-color: #357abd;
+  border-color: #357abd;
+}
+
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 1rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* Form styles */
+.form-control {
+  border-radius: 0.5rem;
+  border: 1px solid #dee2e6;
+  padding: 0.75rem;
+}
+
+.form-control:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 0.2rem rgba(74, 144, 226, 0.25);
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Voting section styles */
+.voting-section {
+  padding: 1.5rem;
+}
+
+.voting-section h3 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+/* Form improvements */
+.form-label {
+  font-weight: 500;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  transition: all 0.2s ease;
+}
+
+.form-control:focus {
+  background-color: #fff;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 0.2rem rgba(74, 144, 226, 0.25);
+}
+
+/* Alert styles */
+.alert {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.alert-info {
+  background-color: #e8f4fd;
+  border-color: #bee5eb;
+  color: #0c5460;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+}
+
+/* Button improvements */
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+  transition: all 0.2s ease;
+}
+
+.btn-success:hover:not(:disabled) {
+  background-color: #218838;
+  border-color: #1e7e34;
+  transform: translateY(-1px);
+}
+
+.btn-success:disabled {
+  background-color: #74c686;
+  border-color: #74c686;
+}
+
+/* Loading spinner styles */
+.spinner-border {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-width: 0.15em;
+}
+
+/* Table improvements */
+.table-responsive {
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.table th {
+  font-weight: 600;
+  color: #2c3e50;
+  border-bottom-width: 1px;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* Select styles */
+.form-select {
+  border-radius: 0.5rem;
+  border: 1px solid #dee2e6;
+  padding: 0.75rem;
+  background-color: #f8f9fa;
+  transition: all 0.2s ease;
+}
+
+.form-select:focus {
+  background-color: #fff;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 0.2rem rgba(74, 144, 226, 0.25);
+}
+
+/* Section styles */
+.voters-section {
+  padding: 1.5rem;
+}
+
+.voters-section h3 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+/* Add these to your existing styles */
+
+.candidates-section {
+  padding: 1.5rem;
+}
+
+.candidates-section h3 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.badge {
+  font-size: 0.9em;
+  padding: 0.5em 1em;
+}
+
+.winner-section .card {
+  border: 2px solid #28a745;
+  transition: all 0.3s ease;
+}
+
+.winner-section .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(40, 167, 69, 0.2);
+}
+
+.progress {
+  background-color: #e9ecef;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background-color: #4a90e2;
+  transition: width 0.6s ease;
+}
+
+.table-success {
+  background-color: rgba(40, 167, 69, 0.1) !important;
+}
+
+.fs-6 {
+  font-size: 1rem !important;
+}
