@@ -66,7 +66,7 @@ A decentralized electronic voting system built with React and Ethereum blockchai
 1. Clone the repository
 
 ```bash
-git clone https://github.com/abedin-ansari/blockchain-voting-system.git
+git clone https://github.com/abedin-ansari/E-Voting-System.git
 ```
 
 2. Install dependencies
